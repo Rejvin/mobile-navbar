@@ -29,6 +29,8 @@
   	.menu-close {
 		top: -12px;
 		left: 26px;
+		opacity: 1;
+		visibility: visible;
   	}
   	.slicknav_nav {margin-top: 49px;}
     
