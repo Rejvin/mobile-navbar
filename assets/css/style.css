@@ -1,0 +1,130 @@
+/* Base CSS */
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i');
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+a:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.8;
+}
+a:hover { text-decoration: none }
+
+.menu-close {
+    position: absolute;
+    padding: 2px 12px;
+    background-color: #F43438;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    z-index: 999;
+}
+
+.goToTop {
+  position: fixed;
+  top: 0;
+  height: 80px;
+  width: 100%;
+  z-index: 999;
+}
+
+.logo a {color: #fff;}
+.header-area-wrapper {
+    background-color: #000;
+    padding: 30px 0;
+}
+.mainmenu {text-align: right;}
+.mainmenu ul {margin: 0; padding: 0; list-style: none;}
+.mainmenu li {display: inline-block; position: relative;}
+.mainmenu li.active a {color: #F43438;}
+.mainmenu li a {
+    color: #fff;
+    text-transform: uppercase;
+    padding-left: 40px;
+    display: block;
+}
+.mainmenu li ul {
+    position: absolute;
+    background-color: #000;
+    left: 25px;
+    top: 55px;
+    color: #fff;
+    width: 220px;
+    text-align: left;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 99;
+    transition: .3s;
+    border-top: 3px solid #F43438;
+}
+.mainmenu li ul li {
+    display: block;
+    padding-top: 0;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+    margin: 10px;
+}
+.mainmenu li ul li:last-child {border-bottom: none; padding-bottom: 0;}
+.mainmenu li:hover ul{            
+    opacity: 1;
+    visibility: visible;
+}
+.mainmenu li li a {
+    font-size: 12px;
+    color: #ddd;
+    padding-left: 0;
+    text-transform: capitalize;
+}
+.mainmenu li:hover > a {color: #F43438;}
+.mainmenu li:hover li:hover > a {color: #F43438;}
+
+.slicknav_menu {display: none; text-transform: uppercase;}
+.slicknav_btn {
+    float: none; 
+    display: inline-block; 
+    background-color: #F43438; 
+    margin-left: 20px;
+    border-radius: 0;
+}
+.slicknav_menu .slicknav_menutxt {text-shadow: 0 0 0;}
+.slicknav_nav {
+    background-color: #000; 
+    text-align: left;
+    margin-top: 10px;
+    border-top: 3px solid #F43438;
+}
+.slicknav_nav .slicknav_row:hover, .slicknav_nav a:hover {
+    background-color: #000; 
+    border-radius: 0; 
+    color: #fff;
+}
+.slicknav_nav li {
+    color: #ddd;
+    font-size: 12px;
+    border-bottom: 1px solid #ddd;
+    margin: 10px;
+    padding-top: 0;
+}
+.slicknav_nav li:last-child {border-bottom: none;}
